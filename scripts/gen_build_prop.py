@@ -115,7 +115,7 @@ def parse_args():
   if args.build_thumbprint_file:
     config["BuildThumbprint"] = args.build_thumbprint_file.read().strip()
 
-  config["LineageDesc"] = config["BuildDesc"]
+  config["LineageDesc"] = config["BuildId"]
   config["LineageDevice"] = config["DeviceName"]
 
   if config["BuildNumber"].startswith("eng."):
@@ -218,9 +218,9 @@ def generate_build_info(args):
 
     # Dev. branches should have DISPLAY_BUILD_NUMBER set
     if config["DisplayBuildNumber"]:
-      print(f"ro.build.display.id?={config['BuildId']}.{config['BuildNumber']} {config['BuildKeys']}")
+      print(f"ro.build.display.id?={config['BuildId']}")
     else:
-      print(f"ro.build.display.id?={config['BuildId']} {config['BuildKeys']}")
+      print(f"ro.build.display.id?={config['BuildId']}")
   else:
     # Non-user builds should show detailed build information (See build desc above)
     print(f"ro.build.display.id?={config['LineageDesc']}")
