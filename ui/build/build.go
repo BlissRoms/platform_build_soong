@@ -305,6 +305,7 @@ func Build(ctx Context, config Config) {
 		return
 	} else if inList("deviceclean", config.Arguments()) {
 		deviceClean(ctx, config, what)
+		ctx.Println(config.ProductOut(), "removed.")
 		return
 	}
 
