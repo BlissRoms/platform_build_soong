@@ -146,6 +146,7 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 // Variables to print out in the top banner
 var BannerVars = []string{
 	"PRODUCT_SOURCE_ROOT_DIRS",
+	"BLISS_BUILD_VERSION",
 	"BLISS_CODENAME",
 	"BLISS_VERSION",
 	"BLISS_DEVICE",
