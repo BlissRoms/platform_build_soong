@@ -269,6 +269,14 @@ com\.nvidia\..*
 # OP adds
 com.oplus.os
 
+# OnePlus
+com.oplus.*
+net.oneplus.*
+oplus.*
+vendor.oplus.*
+com.oneplus.*
+vendor.oneplus.*
+
 # QC adds
 com.qualcomm.qti
 com.quicinc.tcmiface
