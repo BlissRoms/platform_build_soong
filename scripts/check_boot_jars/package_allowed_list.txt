@@ -260,6 +260,7 @@ org\.chromium\.arc
 org\.chromium\.arc\..*
 
 # Lineage adds
+vendor.lineage.touch.*
 lineageos\.platform
 org\.lineageos\.platform\.internal
 
