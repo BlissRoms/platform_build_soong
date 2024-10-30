@@ -121,6 +121,9 @@ def parse_args():
   config["BlissDesc"] = config["BuildDesc"]
   config["BlissDevice"] = config["DeviceName"]
 
+  if config["BuildNumber"].startswith("eng."):
+    config["BuildNumber"] = config["DateUtc"]
+
   override_config(config)
 
   append_additional_system_props(args)
